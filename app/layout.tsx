@@ -1,5 +1,4 @@
 import "./globals.css"
-import { Inter } from "next/font/google"
 import { Exo_2 } from "next/font/google"
 
 const exo = Exo_2({
@@ -15,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='en'>
-      <body className={exo.className}>{children}</body>
+      <body className={`${exo.className} bg-slate-50 text-gray-950`}>{children}</body>
     </html>
   )
 }
