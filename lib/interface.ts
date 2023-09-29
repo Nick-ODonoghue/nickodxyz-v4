@@ -17,7 +17,7 @@ export interface SiteIntro {
 
 export interface Projects {
   projectTitle: string
-  projectOverview: Text
+  projectOverview: string
   techStack: { tech: string }[]
   projectLink: { link: string; linkType: string }[]
   projectImage: {

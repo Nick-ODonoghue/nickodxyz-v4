@@ -53,7 +53,7 @@ export default {
               name: "linkType",
               title: "Link Type",
               type: "string",
-              description: "The type of link (e.g. github, website)",
+              description: "The type of link (e.g. github, live site)",
             },
           ],
         },
@@ -64,6 +64,12 @@ export default {
       title: "Project Image",
       type: "image",
       description: "The image of the project",
+    },
+    {
+      name: "order",
+      title: "Order",
+      type: "number",
+      description: "The order the projects should be displayed in",
     },
   ],
 }

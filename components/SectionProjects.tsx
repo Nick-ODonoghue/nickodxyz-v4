@@ -8,8 +8,8 @@ export default async function SectionProjects() {
   if (!projectData) return <div>Loading...</div>
 
   return (
-    <section className=' container mx-auto px-4'>
-      <h2>.projects</h2>
+    <section className=' container mx-auto px-4 pt-28' id='projects'>
+      <h2>.projects()</h2>
       <ProjectCard projectData={projectData} />
     </section>
   )

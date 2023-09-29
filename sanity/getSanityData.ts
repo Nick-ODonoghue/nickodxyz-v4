@@ -13,7 +13,13 @@ export async function getIntroData() {
 }
 
 export async function getProjectData() {
-  const query = groq`*[ _type == "projects"]`
+  const query = groq`*[ _type == "projects"] | order(order asc) {
+    ...,
+    projectLink[] | order(linkType asc) {
+      link,
+      linkType
+    }
+  }`
   const data = await client.fetch(query)
   return data
 }
