@@ -1,5 +1,3 @@
-"use client"
-
 import Link from "next/link"
 import { NavbarLinks } from "@/lib/interface"
 import { getNavData } from "@/sanity/getSanityData"
