@@ -6,3 +6,8 @@ export async function getNavData() {
   const data = await client.fetch(query)
   return data
 }
+export async function getIntroData() {
+  const query = groq`*[_type == "siteIntro"]`
+  const data = await client.fetch(query)
+  return data
+}
