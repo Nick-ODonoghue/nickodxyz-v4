@@ -15,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='en'>
-      <body className={`${exo.className} bg-slate-50 text-gray-950 h-[5000px]`}>
+      <body className={`${exo.className} bg-slate-50 text-gray-950 h-[5000px] pt-40 sm:pt-48`}>
         <Header />
         {children}
       </body>

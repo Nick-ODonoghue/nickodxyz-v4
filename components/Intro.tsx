@@ -28,10 +28,10 @@ export default async function Intro() {
   if (!introData) return <div>Loading...</div>
 
   return (
-    <section className=' container mx-auto px-4 flex justify-center items-center text-center h-screen'>
+    <section>
       {introData.map((item) => (
-        <div key={item._id}>
-          <div className=' '>
+        <div key={item._id} className=' container mx-auto px-4 flex flex-col justify-center items-center text-center'>
+          <div className=' prose-h2:text-6xl prose-h2:font-bold prose-p:text-5xl prose-p:text-purple-600 prose-headings:mb-6 prose-p:mb-10'>
             <PortableText value={item.authorBio} components={myPortableTextComponent} />
           </div>
           <div className=' flex flex-row justify-center gap-6 text-6xl'>
