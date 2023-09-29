@@ -35,12 +35,12 @@ export default async function Intro() {
             <PortableText value={item.authorBio} components={myPortableTextComponent} />
           </div>
           <div className=' flex flex-row justify-center gap-6 text-6xl'>
-            <a href={item.socialLinks[0]} target='_blank'>
+            <Link href={item.socialLinks[0]} target='_blank'>
               <AiFillLinkedin className='' />
-            </a>
-            <a href={item.socialLinks[1]} target='_blank'>
+            </Link>
+            <Link href={item.socialLinks[1]} target='_blank'>
               <AiFillGithub className='' />
-            </a>
+            </Link>
           </div>
         </div>
       ))}

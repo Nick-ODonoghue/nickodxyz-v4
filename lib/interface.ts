@@ -14,3 +14,17 @@ export interface SiteIntro {
   socialLinks: string[]
   _id: string
 }
+
+export interface Projects {
+  projectTitle: string
+  projectOverview: Text
+  techStack: { tech: string }[]
+  projectLink: { link: string; linkType: string }[]
+  projectImage: {
+    asset: {
+      _ref: string
+      _type: string
+    }
+  }
+  _id: string
+}
